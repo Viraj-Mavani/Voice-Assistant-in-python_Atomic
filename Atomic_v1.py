@@ -229,7 +229,7 @@ if __name__ == "__main__":
 
 			elif "calculate" in query:
 				app_id = "Wolframalpha api id"
-				client = wolframalpha.Client("TAH989-5R4GQ7E6TT")
+				client = wolframalpha.Client("KEY")
 				indx = query.lower().split().index('calculate')
 				query = query.split()[indx + 1:]
 				res = client.query(' '.join(query))
@@ -275,7 +275,7 @@ if __name__ == "__main__":
 				speak(f"SystemFamily: {my_system.SystemFamily}")
 
 			elif "what is" in query or "who is" in query or "weather" in query:
-				client = wolframalpha.Client("TAH989-5R4GQ7E6TT")
+				client = wolframalpha.Client("KEY")
 				res = client.query(query)
 				try:
 					speak(next(res.results).text)
@@ -299,7 +299,7 @@ if __name__ == "__main__":
 				query = query.replace("in youtube", "")
 				query = query.replace("on youtube", "").strip()
 				speak(f"playing {query} in youtube")
-				api_key = "AIzaSyDHWXEhskRq65bfurRDr18PC8uE6ruMjTU"
+				api_key = "KEY"
 				from apiclient.discovery import build
 				# query= query.split("play")
 				# query = str(query[0: ])
