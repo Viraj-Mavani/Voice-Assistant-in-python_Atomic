@@ -7,7 +7,7 @@ query = "play thoda thoda pyar"
 #
 # if "play" in query:
 #     print(f"playing {query} in youtube")
-#     api_key = "AIzaSyDHWXEhskRq65bfurRDr18PC8uE6ruMjTU"
+#     api_key = "KEY"
 #     from apiclient.discovery import build
 #     query= query.split("play")
 #     print(f"{query}")
@@ -30,7 +30,7 @@ if "play" in query:
     query = query.replace("in youtube", "")
     query = query.replace("on youtube", "").strip()
     print(f"playing {query} in youtube")
-    api_key = "AIzaSyDHWXEhskRq65bfurRDr18PC8uE6ruMjTU"
+    api_key = "KEY"
     from apiclient.discovery import build
     # query= query.split("play")
     # query = str(query[0: ])
