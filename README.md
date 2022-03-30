@@ -1,24 +1,20 @@
 # Voice-Assistant-in-python_Atomic
 Its a Voice Assistant which works on Windows
 
-Modules:
-import pyttsx3
-import speech_recognition as sr
-import datetime
-import wikipedia
-import random
-import webbrowser
-import os
-import winshell
-import smtplib
-import subprocess
-# from selenium import webdriver
-import playsound
-from gtts import gTTS
-import wolframalpha
-import ctypes
-import pyjokes
-import wmi
-from ecapture import ecapture as ec
-import requests
-from bs4 import BeautifulSoup
+## Modules:
+- pip install pyttsx3
+- pip install speech_recognition
+- pip install wikipedia
+- pip install winshell
+- pip install smtplib
+- pip install subprocess
+- pip install selenium
+- pip install playsound
+- pip install gTTS
+- pip install wolframalpha
+- pip install ctypes
+- pip install pyjokes
+- pip install wmi
+- pip install ecapture
+- pip install requests
+- pip install bs4
