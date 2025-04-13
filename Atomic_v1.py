@@ -1,3 +1,4 @@
+import logo
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -14,7 +15,6 @@ from gtts import gTTS
 import wolframalpha
 import ctypes
 import pyjokes
-import logo
 import wmi
 from ecapture import ecapture as ec
 import requests
@@ -43,9 +43,9 @@ def takeCommand():
 		audio = r.listen(source, phrase_time_limit=25)
 
 	try:
-	    print("Recognizing...")
-	    query = r.recognize_google(audio, language='en-in')
-	    print(f"User said: {query}\n")
+		print("Recognizing...")
+		query = r.recognize_google(audio, language='en-in')
+		print(f"User said: {query}\n")
 
 	except Exception as e:
 		speak("Could not understand your audio, PLease try again !")
@@ -252,12 +252,12 @@ if __name__ == "__main__":
 				speak(more_info)
 				more_info_query = takeCommand().lower()
 				if "yes" in more_info_query or "yeah" in more_info_query:
-				    speak("Opening Wikipedia")
-				    # query = query.replace("in wikipedia", "")
-				    # query = query.replace("wikipedia", "")
-				    # query = query.replace("search", "").strip()
-				    webbrowser.open("https://en.wikipedia.org/wiki/" + (query))
-				    speak(f"Here is more information about {query}")
+					speak("Opening Wikipedia")
+					# query = query.replace("in wikipedia", "")
+					# query = query.replace("wikipedia", "")
+					# query = query.replace("search", "").strip()
+					webbrowser.open("https://en.wikipedia.org/wiki/" + (query))
+					speak(f"Here is more information about {query}")
 
 				else:
 					speak("ok")

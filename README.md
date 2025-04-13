@@ -3,7 +3,7 @@ Its a Voice Assistant which works on Windows
 
 ## Modules:
 - pip install pyttsx3
-- pip install speech_recognition
+- pip install SpeechRecognition
 - pip install wikipedia
 - pip install winshell
 - pip install smtplib
